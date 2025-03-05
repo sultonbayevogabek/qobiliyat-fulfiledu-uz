@@ -1,0 +1,77 @@
+/* staatliches-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/staatliches-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v18-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../img/bg_main@1x.jpg");
+  font-family: "Inter", sans-serif;
+  color: #000000;
+}
+
+.bg-telegram {
+  background-position: top right;
+  background-attachment: fixed;
+  background-image: url("../img/bg_telegram@1x.jpg");
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(#379863, #50CA88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.gradient-button {
+  background: radial-gradient(50% 50% at 50% 50%, #379863 0%, #50CA88 100%);
+}
+
+.font-staatliches {
+  font-family: 'Staatliches', sans-serif;
+}
+
+.telegram-radial {
+  background-image: radial-gradient(#1F6588, #279FDB);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  body {
+    background-image: url("../img/bg_main@2x.jpg");
+  }
+
+  .bg-telegram {
+    background-image: url("../img/bg_telegram@2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body, .bg-telegram {
+    background-image: none;
+  }
+}
