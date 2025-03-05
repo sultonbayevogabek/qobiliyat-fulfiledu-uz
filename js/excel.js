@@ -7,18 +7,18 @@ document.querySelector('#joinToChannel')?.addEventListener('click', () => {
 })
 
 if (user && user?.name && user?.phone && user?.time) {
-    const formData = new FormData();
-    formData.append('Ismi', user?.name);
-    formData.append('Telefon raqami', user?.phone);
-    formData.append(`Ro'yxatdan o'tgan vaqti`, user?.time);
-    fetch('https://script.google.com/macros/s/AKfycbxRE4sCEGe2lGLnDPXg4vJYJ0C6YfK2unf87Z20y_RuxXgSazCZUhYMKWjKZ-c5eERl/exec', {
-        method: 'POST',
-        body: formData
+  const formData = new FormData();
+  formData.append('Ismi', user?.name);
+  formData.append('Telefon raqami', user?.phone);
+  formData.append(`Ro'yxatdan o'tgan vaqti`, user?.time);
+  fetch('https://script.google.com/macros/s/AKfycbxRE4sCEGe2lGLnDPXg4vJYJ0C6YfK2unf87Z20y_RuxXgSazCZUhYMKWjKZ-c5eERl/exec', {
+    method: 'POST',
+    body: formData
+  })
+    .then()
+    .then(() => {
+      localStorage.clear();
     })
-        .then()
-        .then(() => {
-            localStorage.clear();
-        })
 } else {
-    localStorage.clear();
+  localStorage.clear();
 }
