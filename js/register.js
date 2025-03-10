@@ -4,8 +4,10 @@
   const statistics = new Statistics();
   let user = JSON.parse(localStorage.getItem('user'));
 
-  document.querySelector('#joinToChannel')?.addEventListener('click', async () => {
+  document.querySelector('#joinToChannel')?.addEventListener('click', async (e) => {
+    e.target.setAttribute('disabled', 'true');
     await statistics.onClickTgBtn();
+    e.target.removeAttribute('disabled');
     window.location.href = 'https://t.me/+jcN0N7kRX0ljMWIy';
   })
 
