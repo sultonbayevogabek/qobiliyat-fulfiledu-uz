@@ -6,7 +6,7 @@
 
   document.querySelector('#joinToChannel')?.addEventListener('click', async () => {
     await statistics.onClickTgBtn();
-    window.location.href = 'https://t.me/+yIDBpH4KXAg4YjVi';
+    window.location.href = 'https://t.me/+qgqFwOCuHuxjYWM6';
   })
 
   if (user && user?.name && user?.phone && user?.time) {
