@@ -131,13 +131,20 @@ body {
   @apply relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[100px] bg-[#00971C] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
 }
 
+.tg-button {
+  font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
+  background: radial-gradient(50% 50% at 50% 50%, #1E8AB5 0%, #007AAB 100%);
+  @apply relative overflow-hidden rounded-full uppercase h-[70px] 800px:h-[80px] 1200px:h-[100px] text-[#fff] text-[28px] 800px:text-[32px] 1200px:text-[40px] cursor-pointer;
+}
+
 .submit-button {
   font-family: 'Bebas Neue', sans-serif;
   cursor: pointer;
   @apply relative w-full overflow-hidden rounded-full uppercase h-[60px] 800px:h-[70px] 1200px:h-[70px] bg-[#00971C] text-[#fff] text-[24px] 800px:text-[28px] 1200px:text-[32px] cursor-pointer;
 }
 
-.main-button::before, .submit-button::before {
+.main-button::before, .submit-button::before, .tg-button::before {
   content: '';
   position: absolute;
   top: -50%;
